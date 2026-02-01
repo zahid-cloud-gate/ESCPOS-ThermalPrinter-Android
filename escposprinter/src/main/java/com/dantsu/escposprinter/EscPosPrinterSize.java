@@ -97,11 +97,7 @@ public abstract class EscPosPrinterSize {
             bitmapWidth = maxWidth;
             isSizeEdit = true;
         }
-        if (bitmapHeight > maxHeight) {
-            bitmapWidth = Math.round(((float) bitmapWidth) * ((float) maxHeight) / ((float) bitmapHeight));
-            bitmapHeight = maxHeight;
-            isSizeEdit = true;
-        }
+       
 
         if (isSizeEdit) {
             bitmap = Bitmap.createScaledBitmap(bitmap, bitmapWidth, bitmapHeight, true);
